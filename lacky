@@ -1,0 +1,13 @@
+t = int(input())
+
+for _ in range(t):
+    ticket = input().strip()
+    
+    sum_first = int(ticket[0]) + int(ticket[1]) + int(ticket[2])
+
+    sum_last = int(ticket[3]) + int(ticket[4]) + int(ticket[5])
+
+    if sum_first == sum_last:
+        print("YES")
+    else:
+        print("NO")
