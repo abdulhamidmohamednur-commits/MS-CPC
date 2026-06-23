@@ -1,0 +1,23 @@
+t = int(input())
+
+for _ in range(t):
+    n = int(input())
+    a = input().strip()
+    b = input().strip()
+
+    ok = True
+
+    for i in range(n):
+        x = a[i]
+        y = b[i]
+
+        if x != 'R':
+            x = 'G'
+        if y != 'R':
+            y = 'G'
+
+        if x != y:
+            ok = False
+            break
+
+    print("YES" if ok else "NO")
