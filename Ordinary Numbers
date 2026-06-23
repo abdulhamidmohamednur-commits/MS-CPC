@@ -1,0 +1,17 @@
+t = int(input())
+
+for _ in range(t):
+    n = int(input())
+
+    s = str(n)
+    ans = (len(s) - 1) * 9
+
+    first = int(s[0])
+    ordinary = int(s[0] * len(s))
+
+    if ordinary <= n:
+        ans += first
+    else:
+        ans += first - 1
+
+    print(ans)
