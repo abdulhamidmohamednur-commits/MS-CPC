@@ -1,0 +1,11 @@
+t = int(input())
+
+s = "codeforces"
+
+for _ in range(t):
+    c = input().strip()
+
+    if c in s:
+        print("YES")
+    else:
+        print("NO")
