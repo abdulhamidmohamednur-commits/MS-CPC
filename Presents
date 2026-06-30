@@ -1,0 +1,11 @@
+n = int(input())
+p = list(map(int, input().split()))
+
+# Create an output list to store the givers
+ans = [0] * n
+
+for i in range(n):
+    # friend (i + 1) gave a gift to friend p[i]
+    ans[p[i] - 1] = i + 1
+
+print(*ans)
