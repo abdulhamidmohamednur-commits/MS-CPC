@@ -1,0 +1,18 @@
+# Read the number of elements
+n = int(input())
+
+# Read the elements of the array
+a = list(map(int, input().split()))
+
+# Convert the array to a set for O(1) lookups
+elements_set = set(a)
+
+count = 0
+
+# Check each element in the original list
+for x in a:
+    if (x + 1) in elements_set:
+        count += 1
+
+# Print the final count
+print(count)
