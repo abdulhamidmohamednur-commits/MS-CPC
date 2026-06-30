@@ -1,0 +1,9 @@
+t = int(input())
+for _ in range(t):
+    a, b, c = map(int, input().split())
+    
+    # If c is odd, Anna gets an extra shared button
+    if a + (c % 2) > b:
+        print("First")
+    else:
+        print("Second")
